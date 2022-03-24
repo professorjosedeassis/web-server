@@ -1,0 +1,44 @@
+Configuração do Firewall no CentOS 7 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Atualizar o CentOS
+yum update
+
+Verificar se o firewall está ativo:
+firewall-cmd --state
+
+Se o firewall não estiver ativo(running) siga os passos abaixo:
+
+Passo 1: Verificar se o firewall está instalado:
+yum list installed | grep firewalld 
+*** Caso não esteja instalado, digite o comando:
+yum install firewalld
+
+Passo 2: Iniciar o serviço:
+systemctl start firewalld
+
+Dica:
+start    (iniciar serviço)
+status   (verificar o status do serviço)
+stop     (parar o serviço)
+restart  (reiniciar o serviço)
+
+Passo 3: Ativar o serviço na inicialização do servidor:
+systemctl enable firewalld
+
+Dica: Para desabilitar o serviço na inicialização digite o comando:
+systemctl disable firewalld
+
+Verificando serviços ativos no firewall >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+firewall-cmd --permanent --list-all
+
+Removendo um serviço >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+firewall-cmd --remove-service=nome_do_serviço --permanent
+
+Adicionando um serviço >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+firewall-cmd --add-service=nome_do_serviço --permanent
+
+Atualizando as regras de firewall >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+firewall-cmd --reload
+
+Listar todos os serviços que podem ser ativados no firewall >>>>>>>>>>>>>>
+firewall-cmd --get-services
