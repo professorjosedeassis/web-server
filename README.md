@@ -1,3 +1,4 @@
+![GitHub](https://img.shields.io/github/license/professorjosedeassis/web-server)
 # Curso Linux WEB Server Level 1
 Aprenda passo a passo do "zero" a instalar e configurar um Servidor WEB dinâmico desenvolvendo um projeto real para hospedagem de múltiplos sites em um VPS. Este curso cria uma base sólida ao aluno ou profissional que deseja se especializar em servidores WEB e também atende a desenvolvedores Full stack e DevOps.
 
