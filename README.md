@@ -1,5 +1,5 @@
 ![GitHub](https://img.shields.io/github/license/professorjosedeassis/web-server)
-# Curso Linux WEB Server Level 1
+# Curso Linux WEB Server Level 1 (CentOS)
 Aprenda passo a passo do "zero" a instalar e configurar um Servidor WEB dinâmico desenvolvendo um projeto real para hospedagem de múltiplos sites em um VPS. Este curso cria uma base sólida ao aluno ou profissional que deseja se especializar em servidores WEB e também atende a desenvolvedores Full stack e DevOps.
 
 Você desenvolverá as seguintes competências:
@@ -14,6 +14,8 @@ Professor José de Assis
 ![YouTube Video Views](https://img.shields.io/youtube/views/Ez9uXOU36B8?style=social)
 ### Playlist
 [Iniciar curso](https://www.youtube.com/playlist?list=PLbEOwbQR9lqySZ9RXfF5cFSyfA-r3n30q)
+### Certificado
+[Iniciar teste](https://forms.gle/p9djT2etRHajtBvw5)
 ## Como apoiar os cursos gratuitos e projetos?
 Você pode:
 - Inscrever-se no canal do YouTube - [INSCREVA-SE!](https://www.youtube.com/c/RoboticapraticaBr/?sub_confirmation=1)
