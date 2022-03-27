@@ -1,0 +1,13 @@
+$TTL 86400
+@       IN SOA  ns1.roboticapratica.pro.br. webmaster.roboticapratica.pro.br. (
+        1       ; Serial
+        86400   ; Refresh
+        86400   ; Retry
+        86400   ; Expire
+        86400 ) ; Negative Cache TTL
+;
+@       IN NS   ns1.roboticapratica.pro.br.
+ns1     IN A    192.168.0.3
+webserver       IN A    192.168.0.2
+roboticapratica.pro.br. IN A    192.168.0.2
+www     IN CNAME        webserver

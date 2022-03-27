@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--Comentários não são interpretados -->
+<!--lang="pt-br" (português do Brasil) -->
+<html lang="pt-br"><!-- início do código -->
+
+<!--bastidores do site -->
+<head>
+	<meta charset = "utf-8"><!-- encoding (codificação Brasil)-->
+	<!--Título na guia do site IMPORTANTE SEO -->
+	<title>Robótica Prática</title>
+	<!--a linha abaixo insere um ícone na guia do site -->
+	<link rel="icon" href="imagens/favicon.png">
+	<!--a linha abaixo descreve o site para os mecanismos de busca SEO -->
+	<meta name= "description" content="Aprenda robótica de forma prática e divertida desenvolvendo projetos simples e de baixo custo">
+	<!--a linha abaixo garante a visualização de forma única e padronizada em cada dispositivo -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- link com a folha de estilo -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- usando um CDN para linkar a biblioteca jQuery 
+	CDN (Content Delivery Network) "servidor externo" -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<!--conteúdo do site -->
+<body>
+	<!-- criando uma divisão para centralizar o site-->
+	<div id="main"> <!--inicio div principal, id cria uma "variável" única"-->
+	<!-- Cabeçalho -->
+	<header>
+	<!-- redes sociais -->
+	<div id="social"><!-- inicio div redes sociais -->
+	<!-- a linha abaixo insere uma imagem clicável
+	alt (descreve a imagem (acessibilidade e SEO))
+	target="_blank" (abre a página em outra aba do navegador)
+	a href (criar links)
+	img src (inserir imagem)
+	-->
+		<a href="https://www.facebook.com/professorjosedeassis" target="_blank"><img src="imagens/face.png" alt="Face do site Robótica Prática"></a>
+		<a href="https://twitter.com/joseassis" target="_blank"><img src="imagens/twitter.png" alt="#joseassis"></a>
+		<a href="https://plus.google.com/+RoboticapraticaBr/posts" target="_blank"><img src="imagens/googleplus.png" alt="Google plus - Robótica Prática"></a>
+		<a href="https://www.youtube.com/user/ProfessorJosedeAssis" target="_blank"><img src="imagens/youtube.png" alt="Vídeo aulas do Professor José de Assis"></a>
+	</div><!-- fim div redes sociais -->
+	<!-- logotipo -->
+	<div id="logotipo"<!-- inicio div logotipo -->	
+		<!-- usando um texto no lugar do logo usar h1 SEO -->
+		<h1><a href="http://roboticapratica.com.br/">Robótica Prática</a></h1>
+		
+		<!-- usando uma imagem no logotipo -->
+		<!-- usar o atributo title (exibe um texto ao passar o mouse-->
+		<!-- linkar o domínio -->
+		<!--<a href="http://roboticapratica.com.br/"><img src ="imagens/logo.png" alt="Robótica Prática" title="Robótica Prática"></a>-->
+	</div><!-- fim div logotipo -->	
+	</header>
+	
+	<!-- Menu -->
+	<nav class="Menu"><!-- class="Menu" usado no jQuery para fixar o menu -->
+		<!-- a linha abaixo é usada no menu responsivo -->
+		<!-- &#9776 (caractere unicode do menu hamburguer) -->
+		<!-- &nbsp; (caractere unicode de espaço em branco) -->
+		<a href="#" class="Mobile">&#9776;&nbsp;Menu</a>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="sobre.html">Sobre</a></li>
+			<!-- a classe Detalhes será usada para desenhar um triângulo no CSS e também desativar o click vis jQuery -->
+			<li><a href="" class="Detalhes">Projetos </a>
+				<ul>
+					<li><a href="#">Robótica Livre</a></li>
+					<li><a href="#">Robótica Simples</a></li>
+					<li><a href="./arduino/arduino.html">Arduino</a></li>
+				</ul>
+			</li>
+			<li><a href="contato.html">Contato</a></li>
+			
+		</ul>
+	</nav>
+	
+	<!-- Seção -->
+	<section id="destaque">
+	<!-- slider -->
+	<div id="destaque1">
+	<ul id="slider"><!-- id usado no slider -->
+		<li  class="Ativo"><a href ="#" target="_blank"><img src="imagens/slide1.jpg" alt="Robótica com Arduino"></a></li><!--classe usada no slider -->
+		<li><a href ="#" target="_blank"><img src="imagens/slide2.jpg" alt="Robótica com Sucata"></a></li>
+		<li><a href ="#" target="_blank"><img src="imagens/slide3.jpg" alt="Aprenda Arduino"></a></li>
+	</ul>
+	</div>
+	
+	<!-- heading line Importante para SEO -->
+		<div id="destaque2">
+		<h2>Aprenda robótica de forma prática e divertida desenvolvendo projetos simples e de baixo custo</h2>
+		</div>
+	<!-- blocos de destaque -->
+	<!-- bloco 1 -->
+	<div class="Destaque3">
+	<a href="#" class="Ignorar"><img src="imagens/roboticalivre.png" alt="Róbotica com Arduino"></a>
+	<p><span>Robótica Livre -</span> Construa robôs usando o Arduino.</p><!-- o span é usado para fazer um destaque de forma linear -->
+	<a href="#" target="_blank">Projetos</a>
+	</div>
+	<!-- bloco 2 -->
+	<div class="Destaque3">
+	<a href="#" class="Ignorar"><img src="imagens/roboticasimples.png" alt="Róbotica com Arduino"></a>
+	<p><span>Robótica Simples -</span> Construa robôs usando sucata.</p>
+	<a href="#" target="_blank">Projetos</a>
+	</div>
+	<!-- bloco 3 -->
+	<div class="Destaque3">
+	<a href="#" class="Ignorar"><img src="imagens/arduino.png" alt="Róbotica com Arduino"></a>
+	<p><span>Arduino -</span> Aprenda Arduino com foco em IoT, automação e robótica.</p>
+	<a href="#" target="_blank">Saiba mais</a>
+	</div>
+	</section>	
+	<!-- Rodapé -->
+	<footer>
+		<p>©2017 - Robótica Prática</p>
+	</footer>
+</div><!-- fim div principal -->
+<!-- Melhor lugar para "chamar" os scripts -->
+<!-- apoio para definição dos pontos de quebra do layout responsivo -->
+<script type="text/javascript" src="scripts/tela.js"></script>
+<!-- script jQuery para anular o click no menu em projetos -->
+<script type="text/javascript" src="scripts/removeclick.js"></script>
+<!-- script jQuery para anular o click no menu em projetos -->
+<script type="text/javascript" src="scripts/menuresponsivo.js"></script>
+<!-- script jQuery para fixar o menu -->
+<script type="text/javascript" src="scripts/fixamenu.js"></script>	
+<!-- script jQuery para criar um slider -->
+<script type="text/javascript" src="scripts/slide.js"></script>	
+</body>
+</html><!-- fim do código -->

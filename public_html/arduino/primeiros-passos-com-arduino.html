@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!--Comentários não são interpretados -->
+<!--lang="pt-br" (português do Brasil) -->
+<html lang="pt-br"><!-- início do código -->
+
+<!--bastidores do site -->
+<head>
+	<meta charset = "utf-8"><!-- encoding (codificação Brasil)-->
+	<!--Título na guia do site IMPORTANTE SEO -->
+	<title>Primeiros passos com arduino</title>
+	<!--a linha abaixo insere um ícone na guia do site -->
+	<link rel="icon" href="../imagens/favicon.png">
+	<!--a linha abaixo descreve o site para os mecanismos de busca SEO -->
+	<meta name= "description" content="Passo a passo - instalação e configuração do arduino">
+	<!--a linha abaixo garante a visualização de forma única e padronizada em cada dispositivo -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- link com a folha de estilo -->
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<!-- usando um CDN para linkar a biblioteca jQuery 
+	CDN (Content Delivery Network) "servidor externo" -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- google + -->
+	<!-- Posicione esta tag no cabeçalho ou imediatamente antes da tag de fechamento do corpo. -->
+	<script src="https://apis.google.com/js/platform.js" async defer>
+	{lang: 'pt-BR'}
+	</script>
+</head>
+
+<!--conteúdo do site -->
+<body>
+	<!-- script facebook -->
+	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.9";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		</script>
+	<!-- criando uma divisão para centralizar o site-->
+	<div id="main"> <!--inicio div principal, id cria uma "variável" única"-->
+	<!-- Cabeçalho -->
+	<header>
+	<!-- caixa de pesquisa -->
+	<div id="social">
+		<a href="https://www.facebook.com/professorjosedeassis" target="_blank"><img src="../imagens/face.png" alt="Face do site Robótica Prática"></a>
+		<a href="https://twitter.com/joseassis" target="_blank"><img src="../imagens/twitter.png" alt="#joseassis"></a>
+		<a href="https://plus.google.com/+RoboticapraticaBr/posts" target="_blank"><img src="../imagens/googleplus.png" alt="Google plus - Robótica Prática"></a>
+		<a href="https://www.youtube.com/user/ProfessorJosedeAssis" target="_blank"><img src="../imagens/youtube.png" alt="Vídeo aulas do Professor José de Assis"></a>
+	</div><!-- fim div redes sociais -->
+	<!-- logotipo -->
+	<!-- logotipo -->
+	<div id="logotipo"<!-- inicio div logotipo -->	
+		<!-- usando um texto no lugar do logo usar h1 SEO -->
+		<h1><a href="http://roboticapratica.com.br/">Robótica Prática</a></h1>
+		
+		<!-- usando uma imagem no logotipo -->
+		<!-- usar o atributo title (exibe um texto ao passar o mouse-->
+		<!-- linkar o domínio -->
+		<!--<a href="http://roboticapratica.com.br/"><img src ="imagens/logo.png" alt="Robótica Prática" title="Robótica Prática"></a>-->
+	</div><!-- fim div logotipo -->	
+	</header>
+	
+	<!-- Menu -->
+	<nav class="Menu"><!-- class="Menu" usado no jQuery para fixar o menu -->
+		<!-- a linha abaixo é usada no menu responsivo -->
+		<!-- &#9776 (caractere unicode do menu hamburguer) -->
+		<!-- &nbsp; (caractere unicode de espaço em branco) -->
+		<a href="#" class="Mobile">&#9776;&nbsp;Menu</a>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="sobre.html">Sobre</a></li>
+			<!-- a classe Detalhes será usada para desenhar um triângulo no CSS e também desativar o click vis jQuery -->
+			<li><a href="" class="Detalhes">Projetos </a>
+				<ul>
+					<li><a href="#">Robótica Livre</a></li>
+					<li><a href="#">Robótica Simples</a></li>
+					<li><a href="arduino.html">Arduino</a></li>
+				</ul>
+			</li>
+			<li><a href="../contato.html">Contato</a></li>
+			
+		</ul>
+	</nav>
+	
+	<!-- Seção de conteúdo -->
+	<section class="Conteudo">
+		
+		<h1>Primeiros passos com Arduino</h1>
+		
+		<div class="Container">
+			<h2>Aprenda Arduino usando 4 métodos diferentes:</h2>
+			<ul>
+				<li>Tradicional (Placa Arduino + Software Arduino)</li>
+				<li>Simulador (O aluno aprende Arduino mesmo sem ter a placa)</li>
+				<li>Fritzing (Placa Arduino + Software Fritzing) "profissionalize os projetos"</li>
+				<li>Scratch (Placa Arduino + Software Scratch) "ideal para crianças"</li>			
+			</ul>
+			<div class="Imagens">
+				<img src="../imagens/aprender_arduino.jpg" alt="Aprender arduino">
+			</div>
+			<h2>O que é Arduino?</h2>
+			<p>O vídeo abaixo, apresentado por Massimo Banzi(criador do Arduino) conta um pouco da história e traz alguns exemplos do que pode ser feito com o Arduino. Ative as legendas.</p>
+			<!-- para inserir um vídeo usando o html5 "video privado" usamos a linha abaixo: -->		
+			<!--video src="arduino.mp4" width="640" height="360" controls -->
+			<!-- width -> largura, height -> altura controls -> exbir os controles, o vídeo deve ser no formato .mp4 para tornar o vídeo responsivo usar o seletor video{max-width: 100%;} -->
+			<!-- a linha abaixo incorpora um vídeo do youtube ou vimeo -->
+			<div class="Video">
+				<iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/UoBUXOOdLXY/0.jpg" frameborder="0" height="315" src="https://www.youtube.com/embed/UoBUXOOdLXY?feature=player_embedded" width="560"></iframe>
+			</div>
+			<h3>Aula 1 - Primeiros passos com Arduino</h3>
+			<p>Nesta aula nós vamos aprender a instalar e configurar o Arduino e também montar um pequeno circuito elétrico para acionamento de um Led.</p>
+			<div class="Video">
+				<iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/9R2dLklLb_Y/0.jpg" frameborder="0" height="315" src="https://www.youtube.com/embed/9R2dLklLb_Y?feature=player_embedded" width="560"></iframe>
+				<p>Link para obter o Arduino:</p>
+				<a href="https://www.arduino.cc/" target="_blank">www.arduino.cc</a>
+			</div>
+			<h3>Aula 2 - Simulador de Arduino</h3>
+			<p>Nesta aula vamos aprender a usar um simulador para desenvolver os projetos. O uso do simulador permite que o aluno faça os projetos mesmo não tendo a placa Arduino.</p>
+			<div class="Video">
+				<iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/PA8pYsvYJlk/0.jpg" frameborder="0" height="315" src="https://www.youtube.com/embed/PA8pYsvYJlk?feature=player_embedded" width="560"></iframe>
+				<p>Acesso ao simulador:</p>
+				<a href="https://circuits.io/" target="_blank">circuits.io</a>
+			</div>
+			<h3>Aula 3 - Arduino + Fritzing</h3>
+			<p>Nesta aula nós vamos aprender a trabalhar com o Fritzing. O Fritzing permite modelar circuitos, confeccionar placas, shields e também programar o Arduino. O uso do Fritzing profissionaliza o desenvolvimento dos projetos.</p>
+			<div class="Video">
+				<iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/Rd0H5x8SD6g/0.jpg" frameborder="0" height="315" src="https://www.youtube.com/embed/Rd0H5x8SD6g?feature=player_embedded" width="560"></iframe>
+				<p>Fritzing:</p>
+				<a href="http://fritzing.org/" target="blank">fritzing.org</a>
+			</div>
+			<h3>Aula 4 - Arduino + Scratch</h3>
+			<p>Usaremos a placa Arduino e o Software Scratch para desenvolver os projetos. O uso do Scratch permite que a programação do Arduino seja feita usando "blocos coloridos" (programação visual) e é ideal para crianças.<p>
+			<div class="Video">
+				<iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/slNxzMVKaLE/0.jpg" frameborder="0" height="315" src="https://www.youtube.com/embed/slNxzMVKaLE?feature=player_embedded" width="560"></iframe>
+				<p>S4A:</p>
+				<a href="http://s4a.cat/" target="_blank">s4a.cat</a>
+			</div>
+			<h2>Referências e material extra:</h2>
+			<h3>Vídeo Aula - Como usar o ferro de solda</h3>
+			<p>Este vídeo ensina técnicas de soldagem de forma muito simples e segura e é ideal para quem nunca usou um ferro de solda.</p>
+			<div class="Video">
+				<iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/MJF3RquRH34/0.jpg" frameborder="0" height="315" src="https://www.youtube.com/embed/MJF3RquRH34?feature=player_embedded" width="560"></iframe>
+			</div>			
+			<h3>Arduino - Guia do Iniciante</h3>
+			<p>Sensacional guia produzido gratuitamente pela Multilógica. Nele você vai encontrar, além de indicações de instalação e tutoriais, uma grande quantidade de informações sobre todo o ambiente que está ao redor desta plataforma. Clique na imagem abaixo para fazer o download.</p>
+			<!-- a linha abaixo cria uma imagem clicável que faz o download de um documento qualquer -->
+			<div class="Imagens">
+				<a href="../documentos/Guia_Arduino_Iniciante_Multilogica_Shop.pdf"><img src="../imagens/guia_arduino.jpg" alt="Guia arduino para iniciantes"></a>
+			</div>
+		</div>
+		
+		<div class="Botoes">
+		<!-- script dos botões das redes sociais -->
+			<!-- botão like face -->
+			<div class="fb-like" data-href="https://www.facebook.com/professorjosedeassis" data-layout="button" data-action="like" data-show-faces="false" data-share="false">
+			</div>
+			<!-- botão twitter -->
+			<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+			</script>
+			<!-- Posicione esta tag onde você deseja que o botão +1 apareça. -->		
+			<div class="g-plusone" data-size="medium" data-href="http://www.professorjosedeassis.com.br/">
+			</div>
+		</div>
+		<!-- a imagem abaixo é usada para voltar ao topo usando um efeito em jQuery -->
+		<img src="../imagens/seta_topo.png" class="Top" alt="voltar ao topo" title="Topo do site">
+	</section>
+	
+	<!-- Rodapé -->
+	<footer>
+		<p>©2017 - Robótica Prática</p>
+	</footer>
+</div><!-- fim div principal -->
+<!-- Melhor lugar para "chamar" os scripts -->
+<!-- apoio para definição dos pontos de quebra do layout responsivo -->
+<script type="text/javascript" src="../scripts/tela.js"></script>
+<!-- script jQuery para anular o click no menu em projetos -->
+<script type="text/javascript" src="../scripts/removeclick.js"></script>
+<!-- script jQuery para anular o click no menu em projetos -->
+<script type="text/javascript" src="../scripts/menuresponsivo.js"></script>
+<!-- script jQuery para fixar o menu -->
+<script type="text/javascript" src="../scripts/fixamenu.js"></script>	
+<!-- script jQuery para criar um slider -->
+<script type="text/javascript" src="../scripts/slide.js"></script>
+<script type="text/javascript" src="../scripts/topo.js"></script>
+</body>
+</html><!-- fim do código -->

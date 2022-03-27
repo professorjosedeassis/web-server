@@ -1,0 +1,630 @@
+/* ----------- Importando fontes ------------ */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* o código abaixo muda a fonte para todos os elementos do site
+* (coringa) - todos os elementos
+
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+
+*/
+
+/**************************/
+/***** Layout do site *****/
+/**************************/
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #F1F1F1;
+	/* inserindo uma imagem de background */
+	/*background-image: url("imagens/fundo3.jpg");*/
+	/* repetições */
+	/* no-repeat (sem repetições) */
+	/* repeat-x (repetições na horizontal) */
+	/* repeat-y (repetições na vertical) */
+	/* se omitir esta linha repete na horizontal e vertical*/
+	/*background-repeat: repeat-y;*/
+	
+	/*font-size (tamanho da fonte)
+	em (unidade de medição que equivale a 12pt ou 16px
+	1em = 16px (tamanho ideal de leitura)
+	ver tabela conversão blog do professor
+	*/
+	font-size: 1em;
+	margin-top: 40px; /* criar uma margem superior */
+}
+
+#main{
+/*sempre que possível usar % em largura no desenvolvimento de sites responsivos*/
+	width: 100%; /*largura*/
+	max-width: 980px; /*largura máxima*/
+	background-color: #FFFFFF;
+	margin: 0 auto; /*centralizar o bloco*/
+	
+}
+
+/**************************/
+/******* Cabeçalho ********/
+/**************************/
+
+header{
+	width: 100%;
+	height: 100px;
+	/*dica para ajustar os elementos */
+	/*background-color: #FFFF00;*/ 
+}
+
+#social{
+	float: right;
+	padding: 15px; /* box model - neste caso cria uma margem interna no topo, na direita, embaixo e na esquerda */
+	/*background-color: #FF0000;*/
+}
+
+#busca{
+	float: right;
+	padding: 15px;
+	width: 35%;
+}
+
+#logotipo{
+	float: left; /*responsivo*/
+	/*background-color: #00FF00;*/
+	/*padding-top: 50px;*/
+	/*padding-left: 60px;*/
+}
+
+#logotipo h1{
+	font-weight: 400; /* diminuir peso da fonte */
+	padding-left:30px;
+	padding-top: 14px;
+}
+
+#logotipo a{
+	text-decoration: none; /* remover sublinhado */
+	color: #343538;
+}
+
+/***********************/
+/******** menu *********/
+/***********************/
+
+
+nav{
+	width: 100%;
+	max-width: 980px;
+	position: absolute; /* não "empurrar" o slider */
+}
+
+nav ul{ /*todas as ul(s) dentro do nav*/
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+nav li{
+	position: relative; /*sobrepor slide*/
+}
+
+nav > ul > li{ /* aplicar estilo somente ao li do 1° ul */
+	width: 25%;
+	float: left;
+	z-index: 2; /* eixo z (sobrepor slider) "camadas" */
+}
+
+nav ul li a{
+	display: block;
+	text-align: center;
+	background-color: #343538;
+	padding: 15px;
+	text-decoration: none;
+	color: #FFFFFF;
+	
+}
+
+nav ul li a:hover{
+	background-color: #00BCFF;
+	transition: all .27s;
+}
+
+/* segundo nível */
+
+nav li ul{ /*caminho: "ul que está abaixo de li" */
+	display: none;
+}
+
+nav li:hover ul{
+	display: block;
+}
+
+/* Desenhando um triângulo com o CSS */
+
+.Detalhes:after{ /* argumento obraigatório - após o texto */
+	content:''; /* inserir um conteúdo via CSS */
+	border: 5px solid transparent; /*deixar bordas transparentes*/
+	border-top-color: #E8E8E8; /*colorir a borda superior*/
+	border-bottom: none;
+	/* posicionamento do "triângulo" */
+	vertical-align: middle; /*alinhamento vertical*/
+	display: inline-block;
+}
+
+/*  o código abaixo é usado pelo jQuery para fixar o menu */
+.Fixar{ /* esta classe não tem vínculo com o html e é manipulada pelo jQuery */
+	position: fixed;
+	top: 0;
+	z-index: 3; /* sobrer os demais elementos da página */
+}
+
+/* o código abaixo esconde o menu responsivo(hamburguer) no desktop */
+.Mobile{
+	display: none;
+}
+	
+/*************************/
+/******* Destaque ********/
+/*************************/
+
+#destaque{ /*section principal "equivale ao div"*/
+	width:100%;
+	margin-top: 50px; /*resolve o problema do nav (position absolute) que esconde a parte de cima do slider*/
+	display: table; /* técnica usada para "domar" o float */
+}
+
+/****** SLIDER ******/
+#destaque1{
+	width:100%;
+	height:300px; /*desafio: repensar a responsividade*/
+}
+
+#destaque1 ul{ /* podemos usar o id como referência de caminho */
+	list-style:none;
+	margin:0 auto; /*remover margem e centralizar*/
+	padding:0; /*outra forma de remover espaçamento*/
+	position: relative; /*necessário para o li(filho) ser absolute*/
+}
+
+#destaque ul li{
+	position: absolute;
+	display: none; /* após usar o jQuery para criar o slide, não é mais necessário exibir os slides, isto evita aplicar a troca de slides sem o efeito*/
+}
+
+/******* heading line *******/
+	
+#destaque2{
+	width: 80%; /* outra técnica para centralizar textos "responsivo" */
+	padding: 30px;
+	margin: 0 auto;
+}
+
+#destaque2 h2{
+	font-weight: 400; /*equivale ao bold*/
+	text-align: center;
+}
+
+/*********** Blocos de destaque **************/
+.Destaque3{
+	width: 30.61%; /* (300/980)*100 "regra de 3" */
+	height: 250px;
+	background-color: #FFFFFF;
+	border: 1px solid #DEDEDE;
+	margin-left: 1.9%; /* (20/980)*100 (descontar a borda)*/
+	float: left;
+	text-align: center;
+	padding-top: 20px;
+	position: relative; /* posicionar botão */
+}
+
+.Destaque3 p{
+	height: 92px;
+	background-color: #F5F5F5;
+	font-size: 0.875em;
+	text-align: justify;
+	padding: 10px 8px 0px 8px;
+}
+
+.Destaque3 span{
+	font-weight: 600; /*equivale ao bold*/
+}
+
+.Destaque3 a:not(.Ignorar){ /* :not(.Classe) -> técnica usada para ignorar uma classe específica */
+	width: 80px;
+	height: 28px;
+	background-color: #1E73BE;
+	color: #FFFFFF;
+	padding-top: 7px;
+	font-size: 0.875em;
+	text-decoration: none;
+	right: 10px;
+	bottom: 10px;
+	position: absolute;
+	/*border-radius: 10px; /*arredondar bordas*/
+	
+}
+
+/* técnica para "fabricar botões com CSS */
+/*
+.Destaque3 a:hover:not(.Ignorar){
+	background-color: #F5F5F5;
+	color: #343538;
+	border: 1px solid #1E73BE;
+	border-radius: 10px;
+} /* border-radius arredondar bordas*/
+
+/*************************/
+/**** Seção Principal ****/
+/*************************/
+
+.Principal{
+	margin-top: 100px;
+	/*background-color: #FFFF00;*/
+}
+
+.Principal h1{
+	padding-left: 40px;
+	font-size: 2em;
+}
+
+.DivTexto{
+	width: 62%;
+	float: left;
+	/*background-color: #E8E8E8;*/
+	margin-left: 20px;
+}
+
+.DivTexto p{
+	text-align: justify; /* justificar o texto */
+}
+
+.Compartilhar{
+	/*background-color: #00FFFF;*/
+	width: 31%;
+	float: right;
+	text-align: center;
+	border: 1px solid #343538;
+	border-radius: 10px;
+	margin-right: 20px;
+	padding-bottom: 10px;
+}
+
+.Indice{
+	text-align: center;
+	/*background-color: #FF0000;*/
+	clear: both; /* este seletor impede que outros elementos flutuem em cima dele */
+	padding-top: 30px;
+}
+
+.Indice h2{
+	margin-bottom: 30px;
+}
+
+.Indice img{
+	border: 1px solid #E8E8E8;
+	margin: 6px;
+}
+
+/**************************/
+/***** Seção Conteúdo *****/
+/**************************/
+
+.Conteudo{
+	width: 100%;
+	margin-top: 100px;	
+}
+
+.Conteudo h1{
+	padding-left: 20px;
+	font-size: 2em;
+}
+
+.Container h2{
+	padding-left: 20px;
+	color: #1E73BE;
+}
+
+.Container li{
+	font-size: 0.938em;
+}
+
+.Container h3{
+	padding-left: 20px;
+}
+
+.Container p{
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 0.938em;
+	text-align: justify;
+}
+
+/* usamos a classe abaixo para alinhar os vídeos dentro da div */
+.Video{
+	text-align: center;
+	margin: 10px;
+}
+
+.Video p{
+	text-align: center;
+	margin-bottom: 0;
+	font-size: 0.813em;
+}
+
+.Imagens{
+	text-align: center;
+	margin: 10px;
+}
+
+.Botoes{
+	text-align: center;	
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.Top{
+	cursor: pointer;
+	margin: 0 auto; /*remover se usar técnica position: fixed*/
+	display: block; /*remover se usar técnica position: fixed*/
+	/* fixar no canto inferior direito
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	*/
+}
+
+/*************************/
+/******** Contato ********/
+/*************************/
+
+#contato{
+	margin-top: 100px;
+}
+
+#formulario{
+	width: 70%;
+	margin: 0 auto;
+}
+
+input[type=text]{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	width: 100%;
+	padding: 8px;
+	border-radius: 5px;
+	border: 1px solid #4180C5;	
+}
+
+textarea{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	width: 98%;
+	padding: 15px; /* ou usar padding-bottom */
+	border-radius: 5px;
+	border: 1px solid #4180C5;
+	resize: none; /*evitar o redimensionamento*/
+}
+
+input[type=submit]{
+	margin-bottom: 20px;
+	width: 20%;
+	padding: 15px;
+	border-radius: 5px;
+	border: 1px solid #4180C5;
+	background-color: #4180C5;
+	color: #FFFFFF;
+	cursor: pointer; /* mãozinha */
+	
+}
+
+
+/*************************/
+/******** Rodapé *********/
+/*************************/
+
+footer{
+	width: 100%;
+	color: #FFFFFF;
+	font-size: 0.75em;
+	/* box model - técnica para altura responsiva */
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #343538;
+	text-align: center; /*centralizar arquivos de texto*/
+	margin-top:50px;
+}
+
+
+
+/***********************************************/
+/************ Tratamento responsivo ************/
+/***********************************************/
+
+/* o código abaixo transforma todas as imagens e todos os vídeos incorporados com iframe(youtube, vimeo, etc) em responsivos usar esta técnica sempre que o objeto não "ficar" responsivo */
+
+img, iframe{
+	max-width: 100%;
+}
+
+/* tratamento para resoluções até 980px */
+/* media querie equivale a um estrutura condicional "if" */
+/* screen é a resolução da largura da tela */
+@media screen and (max-width:980px){
+	body{
+		margin:0; /* remove todas as margens */
+	}
+}
+
+/**** tablets e smartphones landscape (ponto de quebra importante *****/
+@media screen and (max-width:768px){
+	
+	#destaque1{
+		height: 230px; 
+	}
+	
+	.Destaque3 p{
+		height: 100px;
+		padding-top: 15px;
+	}
+	
+	#busca{
+		width: 48%;
+	}
+
+}
+
+/**** tablets e smartphones landscape (ponto de quebra importante *****/
+@media screen and (max-width:640px){
+	
+	nav ul li a{
+		font-size: 0.875em;
+	}
+	
+	#destaque{
+		margin-top: 49px;
+	}
+	
+	#destaque1{
+		height: 190px;
+	}
+	
+	#destaque2 h2{
+		font-size: 1.188em;
+	}
+	
+	.Destaque3 p{
+		height: 115px;
+		padding-top: 20px;
+		font-size: 0.813em;
+	}
+	
+	.DivTexto{
+		width: 60%;
+	}
+	
+}
+
+
+
+/*********** smartphones portrait ************/
+@media screen and (max-width:480px){
+	
+	/* cabeçalho */
+	#social{
+		display: none; /*não exibe o conteúdo da div*/
+	}
+	
+	/* menu */
+	nav{
+		position:relative; /* "empurrar todo mundo para baixo" */
+	}
+	
+	nav>ul>li{ /* menu 1° nível em bloco*/
+		width:100%; 
+		height:auto; /*altura responsiva*/
+		float:none;
+	}
+	
+	nav ul li a{ /* diminuir a largura do menu */
+		padding: 12px;
+	}
+	
+	nav ul li a:hover{ /* remover efeito de transição */
+	background-color: #00BCFF;
+	transition: all 0s;
+	}
+	
+	nav li ul li a{ /* mudar a cor do background do 2° nível do menu */
+		background-color: #47494E;
+	}
+	
+	.Mobile{ /*exibir e estilizar o menu responsivo (hamburguer)*/
+		display: block;
+		background-color: #000000;
+		color: #FFFFFF;
+		text-decoration: none;
+		padding: 12px;
+	}
+	
+	/* esconder o menu e ativar com o click (jQquery) */
+	nav ul{
+		display: none
+	}
+	
+	/* importante para UX no dispositivo mobile, não exibir o 2° nível do menu enquanto projetos não for clicado e também esconder o 2° nível quando clicar em projetos (solucionar bug)
+	nav li:hover ul{
+		display: none;
+	}
+	*/	
+	
+	#destaque{
+		margin: 0;
+	}		
+	
+	/* slider */
+	#destaque1{
+		display:none;
+	}
+	
+	/* heading line */
+	#destaque2{
+		width: 90%;
+		padding: 10px;
+	}
+	
+	#destaque2 h2{
+		font-size: 1.188em;
+	}
+	
+	/* blocos de destaque */
+	.Destaque3{
+		width: 100%; /*atenção ao padrão máximo 320px (iphone)*/
+		height: 250px;
+		float: none;
+		margin: 0;
+		margin-bottom: 20px;
+		border: none; /* remover pequena rolagem horizontal */
+	}
+	
+	/****** Seção Principal ******/
+	#busca{
+		display: none; /* provisório */
+	}
+	
+	.Principal{
+		margin-top: 50px;
+	}
+	
+	.Principal h1{
+		padding: 0;
+		text-align: center;
+	}
+	
+	.DivTexto{
+		float: none;
+		width: 90%;
+	}
+	
+	.Compartilhar{
+		float: none;
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	
+	.Indice{
+		padding: 0;
+	}
+	
+	/* seção conteúdo */
+	.Conteudo{
+		margin-top: 50px;	
+	}
+
+	.Conteudo h1{
+		padding-left: 0px;
+		text-align: center;
+	}
+}
+
+
+
