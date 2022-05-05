@@ -9,7 +9,7 @@ Você desenvolverá as seguintes competências:
 ### Autor
 Professor José de Assis
 ### Apresentação do curso
-[![Buscar CEP](https://img.youtube.com/vi/Ez9uXOU36B8/0.jpg)](https://youtu.be/Ez9uXOU36B8 "Assistir no YouTube")
+[![web server](https://img.youtube.com/vi/Ez9uXOU36B8/0.jpg)](https://youtu.be/Ez9uXOU36B8 "Assistir no YouTube")
 
 ![YouTube Video Views](https://img.shields.io/youtube/views/Ez9uXOU36B8?style=social)
 ### Playlist
