@@ -1,6 +1,6 @@
 ![GitHub](https://img.shields.io/github/license/professorjosedeassis/web-server)
-# Curso Linux WEB Server Level 1 (CentOS)
-Aprenda passo a passo do "zero" a instalar e configurar um Servidor WEB dinâmico desenvolvendo um projeto real para hospedagem de múltiplos sites em um VPS. Este curso cria uma base sólida ao aluno ou profissional que deseja se especializar em servidores WEB e também atende a desenvolvedores Full stack e DevOps.
+# Tutorial - Linux WEB Server Level 1 (CentOS)
+Aprenda passo a passo do "zero" a instalar e configurar um Servidor WEB dinâmico desenvolvendo um projeto real para hospedagem de múltiplos sites em um VPS. Este tutorial cria uma base sólida ao aluno ou profissional que deseja se especializar em servidores WEB e também atende a desenvolvedores Full stack e DevOps.
 
 Você desenvolverá as seguintes competências:
 * Instalar e configurar um servidor WEB dinâmico para hospedagem de múltiplos sites (você aprenderá a configurar serviços como ssh, http, ftp, DNS, LAMP (Linux + Apache + mySQL + php), hosts virtuais e firewall.
@@ -8,19 +8,19 @@ Você desenvolverá as seguintes competências:
 * Aprender a instalar o Wordpress que é uma das mais famosas ferramentas de CMS, usado principalmente em sites, blogs e lojas virtuais.
 ### Autor
 Professor José de Assis
-### Apresentação do curso
+### Apresentação
 [![web server](https://img.youtube.com/vi/Ez9uXOU36B8/0.jpg)](https://youtu.be/Ez9uXOU36B8 "Assistir no YouTube")
 
 ![YouTube Video Views](https://img.shields.io/youtube/views/Ez9uXOU36B8?style=social)
 ### Playlist
-[Iniciar curso](https://www.youtube.com/playlist?list=PLbEOwbQR9lqySZ9RXfF5cFSyfA-r3n30q)
+[Iniciar tutorial](https://www.youtube.com/playlist?list=PLbEOwbQR9lqySZ9RXfF5cFSyfA-r3n30q)
 ### Certificado
 [Iniciar teste](https://forms.gle/p9djT2etRHajtBvw5)
-## Como apoiar os cursos gratuitos e projetos?
+## Como apoiar os tutoriais e projetos?
 ### Você pode:
 :heavy_check_mark: Inscrever-se no canal do YouTube - [INSCREVA-SE!](https://www.youtube.com/c/RoboticapraticaBr/?sub_confirmation=1)
 
-:heavy_check_mark: Compartilhar os cursos e projetos
+:heavy_check_mark: Compartilhar os tutoriais e projetos
 
 :heavy_check_mark: Seguir-me nas redes sociais:
 <p align="left">
