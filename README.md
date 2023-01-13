@@ -1,5 +1,5 @@
 ![GitHub](https://img.shields.io/github/license/professorjosedeassis/web-server)
-# Tutorial - Linux WEB Server Level 1 (CentOS)
+# Tutorial - Linux WEB Server (CentOS 7)
 Aprenda passo a passo do "zero" a instalar e configurar um Servidor WEB dinâmico desenvolvendo um projeto real para hospedagem de múltiplos sites em um VPS. Este tutorial cria uma base sólida ao aluno ou profissional que deseja se especializar em servidores WEB e também atende a desenvolvedores Full stack e DevOps.
 
 Você desenvolverá as seguintes competências:
