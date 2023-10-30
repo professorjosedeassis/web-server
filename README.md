@@ -1,6 +1,6 @@
 ![GitHub](https://img.shields.io/github/license/professorjosedeassis/web-server)
-# Tutorial - Linux WEB Server (CentOS 7)
-Aprenda passo a passo do "zero" a instalar e configurar um Servidor WEB dinâmico desenvolvendo um projeto real para hospedagem de múltiplos sites em um VPS. Este tutorial cria uma base sólida ao aluno ou profissional que deseja se especializar em servidores WEB e também atende a desenvolvedores Full stack e DevOps.
+# Linux WEB Server (CentOS)
+Aprenda passo a passo do "zero" a instalar e configurar um Servidor WEB dinâmico desenvolvendo um projeto real para hospedagem de múltiplos sites em um VPS. Este curso cria uma base sólida ao aluno ou profissional que deseja se especializar em servidores WEB e também atende a desenvolvedores Full stack e DevOps.
 
 Você desenvolverá as seguintes competências:
 * Instalar e configurar um servidor WEB dinâmico para hospedagem de múltiplos sites (você aprenderá a configurar serviços como ssh, http, ftp, DNS, LAMP (Linux + Apache + mySQL + php), hosts virtuais e firewall.
@@ -12,7 +12,7 @@ Professor José de Assis
 [![web server](https://img.youtube.com/vi/Ez9uXOU36B8/0.jpg)](https://youtu.be/Ez9uXOU36B8 "Assistir no YouTube")
 
 ![YouTube Video Views](https://img.shields.io/youtube/views/Ez9uXOU36B8?style=social)
-### Iniciar tutorial:
+### Iniciar curso:
 [Playlist](https://www.youtube.com/playlist?list=PLbEOwbQR9lqySZ9RXfF5cFSyfA-r3n30q)
 ## Como apoiar os tutoriais e projetos?
 ### Você pode me pagar um café! ☕
