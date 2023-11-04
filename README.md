@@ -3,7 +3,7 @@
 Aprenda passo a passo do "zero" a instalar e configurar um Servidor WEB dinâmico desenvolvendo um projeto real para hospedagem de múltiplos sites em um VPS. Este curso cria uma base sólida ao aluno ou profissional que deseja se especializar em servidores WEB e também atende a desenvolvedores Full stack e DevOps.
 
 Você desenvolverá as seguintes competências:
-* Instalar e configurar um servidor WEB dinâmico para hospedagem de múltiplos sites (você aprenderá a configurar serviços como ssh, http, ftp, DNS, LAMP (Linux + Apache + mySQL + php), hosts virtuais e firewall.
+* Instalar e configurar um servidor WEB dinâmico para hospedagem de múltiplos sites, você aprenderá a configurar serviços como ssh, http, ftp, DNS, LAMP (Linux + Apache + mySQL + php), hosts virtuais e firewall.
 * Aprender a trabalhar com a distribuição Linux CentOS que é considerada uma das melhores distribuições para usar em servidores WEB.
 * Aprender a instalar o Wordpress que é uma das mais famosas ferramentas de CMS, usado principalmente em sites, blogs e lojas virtuais.
 ### Autor
